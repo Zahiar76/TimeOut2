@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div class="container">
+            <div id="titleBar">
+                <p id="title">Time Out</p>
+            </div>
+            <div id="containerForCourts">
+                    <div class="boxForCourts">
+                        <div class="courtTitleBox">
+                            <p>Hello</p>
+                        </div>
+                    </div>
+                    <div class="boxForCourts">
+                            <div class="courtTitleBox"></div>
+                    </div>
+                    <div class="boxForCourts">
+                        <div class="courtTitleBox"></div>
+                    </div>
+            </div>
+            <script type="text/javascript">
+                function ajaxFunction()
+                {
+                var xmlHttp;
+                try
+                  {
+                  // Firefox, Opera 8.0+, Safari
+                  xmlHttp=new XMLHttpRequest();
+                  }
+                catch (e)
+                  {
+                  // Internet Explorer
+                  try
+                    {
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+                    }
+                  catch (e)
+                    {
+                    try
+                      {
+                      xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                      }
+                    catch (e)
+                      {
+                      alert("Your browser does not support AJAX!");
+                      return false;
+                      }
+                    }
+                  }
+                  xmlHttp.onreadystatechange=function()
+                    {
+                    if(xmlHttp.readyState==4)
+                      {
+                      document.myForm.time.value=xmlHttp.responseText;
+                      }
+                    }
+                  xmlHttp.open("GET","time.asp",true);
+                  xmlHttp.send(null);
+                  }
+                </script>
+         
+        </div>
+    </body>
+</html>
