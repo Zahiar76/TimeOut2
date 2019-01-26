@@ -1,0 +1,25 @@
+{
+  "name": "TimeOut",
+  "version": "1.0.0",
+  "description": "## Usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zahiar76/TimeOut2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zahiar76/TimeOut2/issues"
+  },
+  "homepage": "https://github.com/Zahiar76/TimeOut2#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0",
+    "uniq": "^1.0.1"
+  }
+}
